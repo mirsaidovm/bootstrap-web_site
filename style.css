@@ -1,0 +1,346 @@
+@import url(fonts.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mr);
+}
+
+:root {
+    --mb: Montserrat-Black;
+    --mr: Montserrat-Regular;
+    --msb: Montserrat-SemiBold;
+    --mbi: Montserrat-BoldItalic;
+}
+
+body {
+    background: #151437;
+}
+
+.nav-list {
+    flex-grow: 0;
+}
+
+.nav-list-link {
+    color: #7177f1;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 10px 43px !important;
+    border-radius: 8px;
+    transition: 500ms;
+}
+
+.nav-list-link:hover {
+    color: white;
+    background: #7177F1;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+}
+
+.nav-item:last-child .nav-list-link {
+    background: transparent;
+    padding: 6px 8px !important;
+    box-shadow: none;
+}
+
+.slider-item>img {
+    float: right;
+}
+
+.slider-content {
+    left: 0;
+    right: 0;
+    text-align: left;
+    top: 0;
+}
+
+.slider-ind [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    opacity: 1;
+}
+
+.slider-ind .active {
+    background-color: #7177f1;
+}
+
+
+.slider-content h2 {
+    font-family: var(--msb);
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #EBEBEB;
+    margin-bottom: 10px;
+    margin-left: 110px;
+}
+
+.slider-content p {
+    font-family: var(--msb);
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #7177F1;
+    margin-bottom: 25px;
+    margin-left: 110px;
+    max-width: 520px;
+}
+
+.main-btn {
+    padding: 12px 58px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-left: 220px;
+    background: #7177F1;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    text-decoration: none;
+    width: max-content;
+}
+.slider-ind{
+    bottom: -100px;
+}
+
+.header{
+    position: relative;
+}
+.box1{
+    position: absolute;
+    left: 17px;
+    top: 28px;
+    animation: rotate 100s infinite;
+}
+.circle1{
+    position: absolute;
+    top: -40px;
+    left: 244px;
+    animation: rotate 100s infinite;
+}
+.box2{
+    position: absolute;
+    top: 17px;
+    right: 159px;
+    animation: rotate 100s infinite;
+}
+.box3{
+    position: absolute;
+    right: 240px;
+    top: 270px;
+    animation: rotate 100s infinite;
+}
+
+@keyframes rotate {
+    100%{transform: rotateX(-3600deg);}
+}
+
+.mywork-content-box h2{
+    font-family: var(--msb);
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #7177F1;
+    margin-bottom: 20px;
+}
+
+.mywork-content-box p{
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.mywork-content-box{
+    background: #151437;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    max-width: 630px;
+    padding: 30px 30px 100px 30px;
+}
+
+.mywork-content-box a{
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.mywork{
+    margin-top: 150px;
+    position: relative;
+}
+
+.splash-1{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: -80%;
+}
+
+.main-title{
+    font-family: var(--msb);
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #7177F1;
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.cap-content .accordion{
+    width: 630px;
+}
+.cap-content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.acc-btn{
+    background: #151437;
+    color: #7177f1;
+    font-family: var(--mb);
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+.acc-btn:focus{
+    box-shadow: none;
+}
+
+.acc-item{
+    border: none;
+    background: #7177f1;
+    color: white;
+}
+
+.my-acc{
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+}
+
+.acc-btn:not(.collapsed){
+    background: #7177f1;
+    color: white;
+}
+
+.acc-btn::before{
+    content: url(img/html.png);
+}
+
+.acc-item:nth-child(2) .acc-btn::before{
+    content: url(img/css.png);
+}
+
+.acc-item:nth-child(3) .acc-btn::before{
+    content: url(img/bootstrap.png);
+}
+
+.acc-btn::after{
+    background-image: url(img/arrup.svg);
+    transition: 200ms;
+}
+.acc-btn:not(.collapsed)::after{
+    background-image: url(img/arrdown.svg);
+    transform: rotate(180deg);
+    transition: 200ms;
+}
+
+.my-nav-link{
+    font-family: var(--msb);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #7177f1;
+    border-radius: 0 !important;
+    padding: 19px;
+    width: 300px;
+    background: #151437 !important;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+}
+
+.my-nav-link.active{
+    background: #7177f1 !important;
+    color: #151437 !important;
+}
+.my-nav-link:hover{
+    color: #7177f1;
+}
+
+.my-nav-link:first-child{
+    border-radius: 8px 8px 0 0 !important;
+}
+.my-nav-link:last-child{
+    border-radius: 0 0 8px 8px !important;
+}
+
+.tab-descr h3{
+    font-family: var(--msb);
+    font-size: 24px;
+    color: #7177f1;
+    margin-bottom: 20px;
+}
+
+.tab-descr p{
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    max-width: 630px;
+    margin-bottom: 30px;
+}
+
+
+.tab-descr a{
+    margin-left: 40px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.my-tab-pane.active{
+    display: flex;
+    gap: 30px;
+    background: #151437;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 20px 30px 20px 20px;
+}
+
+.mytabs{
+    position: relative;
+    margin-bottom: 220px;
+}
+.splash2{
+    position: absolute;
+    left: 0;
+    top: -50%;
+    z-index: -1;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 50px;
+    list-style: none;
+    width: 630px;
+    justify-content: center;
+}
+
+.footer-nav__list-link{
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-nav{
+    text-align: center;
+}
+footer{
+    padding-bottom: 133px;
+}
